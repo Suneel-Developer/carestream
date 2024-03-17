@@ -1,0 +1,108 @@
+@import "../../../styles/variables";
+
+.topcontact_container {
+  width: 100%;
+  padding: 50px 16px;
+  .contact__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+
+    .a_headline__title {
+      color: #f58025;
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+      display: block;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .contact_leftside {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+    .u_text_config {
+      color: #000;
+      font-size: 16px;
+      line-height: 24px;
+
+      a {
+        color: #366493;
+
+        &:hover {
+          color: #f58025;
+        }
+      }
+    }
+
+    .rightside {
+      flex: 1;
+    }
+    .o_help__buttons {
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+
+      .o_help__button {
+        padding: 0 0.8rem;
+        margin-right: 0.5rem;
+        height: 38px;
+        line-height: 38px;
+        font-weight: 400;
+        background-color: #f58025;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+        text-decoration: none;
+        outline: 0;
+
+        &:hover {
+          color: white;
+          background-color: #a8510d;
+        }
+      }
+    }
+
+    .o_help__call {
+      margin: 1.5rem 0 0;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid transparent;
+      background-color: #fff3cd;
+      color: #856404;
+      font-size: 0.9rem;
+
+      a {
+        font-weight: 700;
+        color: #366493;
+        font-size: 14.4px;
+
+        &:hover {
+          color: #f58025;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .topcontact_container {
+    padding: 20px 16px;
+    .contact__container {
+      flex-direction: column;
+      .contact_leftside {
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .o_help__buttons {
+        gap: 1rem;
+      }
+    }
+  }
+}

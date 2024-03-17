@@ -1,0 +1,140 @@
+@import "../../../styles/variables";
+
+.box_container {
+  .___container {
+    :nth-child(2) {
+      background-color: rgb(240, 240, 240);
+    }
+    :nth-child(4) {
+      background-color: rgb(240, 240, 240);
+    }
+    :nth-child(6) {
+      background-color: rgb(240, 240, 240);
+    }
+    .__box {
+      padding: 50px 0;
+
+      .__box_main {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 16px;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        gap: 3rem;
+
+        .__box_leftside {
+          width: 41.666667%;
+          background-color: transparent;
+
+          .__box_image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .__box_rightside {
+          width: 58.333333%;
+          background-color: transparent;
+
+          ._headding2 {
+            color: #f58025;
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+            background-color: transparent;
+          }
+
+          ._headding {
+            display: block;
+            color: #366493;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+            background-color: transparent;
+
+            &:hover {
+              color: #f58025;
+            }
+          }
+          .__strong {
+            color: #444;
+            display: block;
+            font-weight: 700;
+            font-size: 1.1875rem;
+            font-style: italic;
+            margin-bottom: 0.625rem;
+            background: transparent;
+          }
+
+          .__content {
+            color: #000;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 1rem;
+            background-color: transparent;
+          }
+
+          .__bullets {
+            padding-left: 22px;
+            font-size: 16px;
+            line-height: 24px;
+            background-color: transparent;
+
+            li{
+                background-color: transparent;
+            }
+
+            .__bullet {
+              display: flex;
+              gap: 8px;
+              align-items: center;
+              color: #366493;
+              background: transparent;
+
+              &:hover {
+                color: #f58025;
+              }
+
+              .__bullet_dot {
+                color: #000;
+                font-size: 12px;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .box_container {
+    .___container {
+      .__box {
+        padding: 20px 0;
+
+        .__box_main {
+          gap: 1rem;
+          flex-direction: column;
+
+          .__box_leftside {
+            width: 100%;
+          }
+          .__box_rightside {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../styles/variables";
+
+._detectors_container {
+  padding: 50px 16px;
+  background-color: rgb(240, 240, 240);
+
+  .___container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 2.2rem;
+
+    .___container_box {
+      width: 50%;
+
+      .___container_box_list {
+        display: flex;
+        gap: 0.8rem;
+        margin-bottom: 1.55rem;
+
+        ._detectors_heading {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin-bottom: 0.3125rem;
+          margin-top: -2px;
+          color: #366493;
+
+          &:hover {
+            color: #f58025;
+          }
+        }
+
+        .__subcontent {
+          color: #000;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ._detectors_container {
+    padding: 20px 16px;
+
+    .___container {
+      flex-direction: column;
+      gap: 0rem;
+
+      .___container_box {
+        width: 100%;
+
+        .___container_box_list {
+          gap: 0.5rem;
+          margin-bottom: 1.55rem;
+
+          ._detectors_heading {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

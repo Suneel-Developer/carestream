@@ -1,0 +1,115 @@
+@import "../../../styles/variables";
+
+.focuesd_container {
+  padding: 50px 16px;
+
+  .__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+
+    .__heading {
+      font-size: 1.5625rem;
+      font-weight: 700;
+      line-height: 2rem !important;
+      margin: 0 0 1.5rem 0;
+      color: rgb(245, 128, 37);
+    }
+
+    .__box_container {
+      display: flex;
+      gap: 4rem;
+
+      .__box {
+        width: 50%;
+
+        .__list_thumb_text {
+          font-size: 1.1rem;
+          font-weight: 700;
+          margin-bottom: 0.3125rem;
+          margin-top: -2px;
+          word-wrap: break-word;
+          display: inline-block;
+        }
+        .__box_text {
+          font-size: 16px;
+          margin-bottom: 22px;
+          font-weight: 400;
+          line-height: 1.5rem;
+          color: #000;
+
+          .__text_link {
+            color: #366493;
+            margin-left: 4px;
+
+            &:hover {
+              color: #f58025;
+            }
+          }
+        }
+
+        .__product_list {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #366493;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 3px;
+          margin-left: 22px;
+
+          &:hover {
+            color: #f58025;
+          }
+
+          .product__list_bullet {
+            font-size: 12px;
+            color: #000;
+          }
+        }
+
+        .m_list_thumb_text__link {
+          display: flex;
+          margin-top: 3rem;
+          gap: 1rem;
+          align-items: flex-start;
+
+          .__company_link {
+            color: #366493;
+            font-size: 1.1rem;
+            font-weight: 700;
+
+            &:hover {
+              color: #f58025;
+            }
+          }
+
+          .__u_text_config {
+            flex: 1;
+            color: #000;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .focuesd_container {
+    padding: 20px 16px;
+
+    .__container {
+      .__box_container {
+        gap: 2rem;
+        flex-direction: column;
+
+        .__box {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

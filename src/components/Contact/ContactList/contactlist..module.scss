@@ -1,0 +1,266 @@
+@import "../../../styles/variables";
+
+.topcontact_container {
+  width: 100%;
+  padding: 3.125rem 16px;
+  background-color: rgb(240, 240, 240);
+
+  .contact__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+
+    .contact_leftside {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+
+      .m_contact_resources_card {
+        margin-bottom: 1rem;
+
+        .__card_headline {
+          background: #1a456b;
+          padding: 0.5rem 1rem;
+          color: #fff;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        .__card_body {
+          padding: 1.5rem 1rem 1rem;
+          font-size: 0.9rem;
+          background: #fff;
+
+          .__card_name {
+            font-size: 1.1rem !important;
+            color: #f58025 !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.5rem !important;
+            line-height: 1.2;
+          }
+          .u_text_config {
+            font-size: 0.9rem;
+            line-height: 21px;
+            margin-bottom: 1.3rem;
+
+            a {
+              color: #366493;
+              word-break: break-all;
+
+              &:hover {
+                color: #f58025;
+              }
+            }
+          }
+        }
+      }
+
+      .product_lists {
+        padding-left: 16px;
+        padding-bottom: 10px;
+        .product_list {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #366493;
+          font-size: 0.9rem;
+          margin-bottom: 0.7px;
+
+          &:hover {
+            color: #f58025;
+          }
+
+          .product__list_bullet {
+            color: black;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .contact_rightside {
+      flex: 1;
+      width: 100%;
+
+      .m_contact_resources_card {
+        margin-bottom: 1rem;
+
+        .__card_headline {
+          background: #1a456b;
+          padding: 0.5rem 1rem;
+          color: #fff;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+
+        .__card_body {
+          padding: 1.5rem 1rem 1rem;
+          font-size: 0.9rem;
+          background: #fff;
+
+          .body_card {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .body_card_card {
+              flex: 1;
+            }
+
+            .a_headline {
+              line-height: 1.2;
+              font-size: 1.1rem;
+              color: #f58025;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+            }
+          }
+
+          .__card_name {
+            font-size: 1.1rem !important;
+            color: #f58025 !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.5rem !important;
+            line-height: 1.2;
+          }
+          .text_strong {
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 24px;
+            color: #000;
+          }
+          .__divider {
+            margin-top: 0.875rem;
+            margin-bottom: 1rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            height: 1px;
+          }
+          .u_text_config {
+            font-size: 0.9rem;
+            line-height: 21px;
+            margin-bottom: 1.3rem;
+
+            a {
+              color: #366493;
+              word-break: break-all;
+
+              &:hover {
+                color: #f58025;
+              }
+            }
+          }
+
+          .__alternate_rows {
+            border: 1px solid rgba(98, 82, 138, 0.08);
+            background-color: rgb(244, 244, 247);
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+
+            .card_column {
+              flex: 1;
+            }
+
+            .a_headline {
+              line-height: 1.2;
+              font-size: 1.1rem;
+              color: #f58025;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+            }
+
+            .u_text_config1 {
+              font-size: 0.9rem;
+              line-height: 21px;
+
+              a {
+                color: #366493;
+                word-wrap: break-word;
+
+                &:hover {
+                  color: #f58025;
+                }
+              }
+            }
+            .text_bullet {
+              font-size: 0.9rem;
+              margin-bottom: 0;
+              line-height: 21px;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              .product__list_bullet1 {
+                font-size: 0.6rem;
+              }
+            }
+          }
+
+          .__alternate_rows:nth-child(2) {
+            background-color: white;
+            border: transparent;
+          }
+          .__alternate_rows:nth-child(3) {
+            padding-bottom: 1rem;
+          }
+          .__alternate_rows:nth-child(4) {
+            background-color: white;
+            border: transparent;
+            padding-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .topcontact_container {
+    padding: 20px 16px;
+    .contact__container {
+      flex-direction: column;
+      .contact_leftside {
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topcontact_container {
+    .contact__container {
+      flex-direction: column;
+
+      .contact_leftside {
+        flex: 1;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .contact_rightside {
+        flex: 1;
+        width: 100%;
+
+        .m_contact_resources_card {
+          margin-bottom: 1rem;
+
+          .__card_body {
+            .body_card {
+              flex-direction: column;
+              gap: 1rem;
+            }
+
+            .__alternate_rows {
+              flex-direction: column;
+              gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

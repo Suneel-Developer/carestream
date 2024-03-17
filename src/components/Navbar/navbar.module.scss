@@ -1,0 +1,275 @@
+.navbar_container {
+  height: 59px;
+  position: fixed;
+  top: 40px;
+  z-index: 999;
+  transition: all 0.2s linear;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .nav_container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navlinks_logo {
+      display: flex;
+      align-items: center;
+
+      .nav_links {
+        flex-grow: 1;
+        width: auto;
+        padding: 0 1rem 0 5rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+
+        .header_nav__link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 1rem;
+          font-weight: 700;
+          text-decoration: none;
+          color: white;
+          height: 59px;
+
+          .nav_icon {
+            font-size: 1.38rem !important;
+            color: white;
+          }
+        }
+
+        .header_nav__link_container {
+          display: none;
+          background-color: white;
+          width: 100%;
+          padding: 38px 0;
+          margin: 0;
+          position: absolute;
+          top: 59px;
+          left: 0;
+          right: 0;
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+          transition: opacity 0.3s ease;
+
+          .__link_content {
+            max-width: 1140px;
+            width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+
+            .category_links {
+              flex: 1;
+              padding: 0 15px 20px 15px;
+              border-left: 1px solid #dee2e6;
+
+              &:first-child {
+                border-left: none;
+              }
+
+              .category_link {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: #366493;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 19px;
+                text-decoration: none;
+
+                &:hover {
+                  color: #f58025;
+                }
+              }
+            }
+          }
+
+          .link_content_company {
+            max-width: 1140px;
+            width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+
+        .header_nav__link_company_container {
+          display: none;
+          background-color: white;
+          width: 100%;
+          padding: 38px 0;
+          margin: 0;
+          position: absolute;
+          top: 59px;
+          left: 0;
+          right: 0;
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+          transition: opacity 0.3s ease;
+
+          .__link_content {
+            max-width: 1140px;
+            width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .__a_list_links {
+              flex: 1;
+              padding: 0 15px 20px 15px;
+              border-left: 1px solid #dee2e6;
+
+              &:first-child {
+                border-left: none;
+              }
+
+              .__a_list_header {
+                color: #000;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 19px;
+                margin-bottom: 1rem;
+              }
+
+              .__a_list {
+                list-style: none;
+                padding-left: 0.75rem;
+                margin-bottom: 0.2rem;
+
+                .__a_list_link {
+                  color: #366493;
+                  font-weight: 400;
+                  font-size: 0.9rem;
+                  line-height: 1rem;
+                  text-decoration: none;
+                  margin-bottom: 21px;
+                  display: block;
+
+                  &:hover {
+                    color: #f58025;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .header_nav__link_item:hover .header_nav__link_container {
+          display: block;
+          opacity: 1;
+        }
+
+        .header_nav__link_item:hover .header_nav__link_company_container {
+          display: block;
+          opacity: 1;
+        }
+      }
+    }
+
+    .header_nav__search {
+      width: auto;
+      flex-basis: 300px;
+      display: flex;
+      align-items: center;
+      height: 58px;
+      justify-content: flex-end;
+
+      .search_input_container {
+        width: 250px;
+        position: relative;
+        margin-right: 3px;
+        height: 40px;
+        overflow: hidden;
+        transition: width 0.25s ease-in-out;
+
+        &.open {
+          width: 300px;
+        }
+
+        .search_input {
+          position: relative;
+          background: #fff;
+          border: 1px solid #dee2e6;
+          display: flex;
+          align-items: center;
+          padding: 0 0.75rem 0 0.7rem;
+
+          .form_control {
+            background: 0 0;
+            border: none;
+            padding: 0.375rem 0;
+            height: 36px;
+            font-size: 16px;
+            color: #666;
+            width: 100%;
+            outline: none;
+          }
+          .nav_timesicon {
+            font-size: 1.33em;
+            line-height: 0.75em;
+            vertical-align: -0.0667em;
+            cursor: pointer;
+          }
+        }
+      }
+      .search_button {
+        background: 0 0;
+        border: none;
+        padding: 0.375rem 0.75rem;
+        cursor: pointer;
+        outline: 0;
+        color: white;
+        transition: color 0.25s ease-in-out;
+
+        .nav_search_icon {
+          font-size: 1.5em;
+          line-height: 0.75em;
+          vertical-align: -0.0667em;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  &.scrolled {
+    background-color: white;
+
+    .navlinks_logo .nav_links .header_nav__link {
+      color: black;
+
+      .nav_icon {
+        color: black;
+      }
+    }
+
+    .header_nav__search .search_button {
+      color: black;
+    }
+
+    .header_nav__search .search_input_container {
+      transition: width 0.25s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar_container {
+    display: none;
+  }
+}
